@@ -4,6 +4,9 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 //import screens
 import HomeScreen from '../screens/Home';
 
+//import navigators
+import ExploreNavigator from './ExploreNavigator';
+
 //import icons
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -27,7 +30,7 @@ const HomeTabNavigator = () => {
       }}>
       <Tab.Screen
         name={'Explore'}
-        component={HomeScreen}
+        component={ExploreNavigator}
         options={{
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />
