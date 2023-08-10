@@ -4,6 +4,15 @@ const styles = StyleSheet.create({
   container: {
     height: 120,
     padding: 5,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+
+    elevation: 6,
   },
   innerContainer: {
     marginHorizontal: 10,
@@ -19,15 +28,14 @@ const styles = StyleSheet.create({
   },
   bedrooms: {
     marginVertical: 10,
-    fontSize: 14,
+    fontSize: 12,
     color: '#5b5b5b',
   },
   description: {
-    fontSize: 18,
-    lineHeight: 26,
+    fontSize: 15,
   },
   prices: {
-    fontSize: 18,
+    fontSize: 15,
     marginVertical: 10,
   },
   oldPrice: {
