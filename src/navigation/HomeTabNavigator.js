@@ -3,6 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 //import screens
 import HomeScreen from '../screens/Home';
+import PostScreen from '../screens/PostScreen';
 
 //import navigators
 import ExploreNavigator from './ExploreNavigator';
@@ -31,8 +32,9 @@ const HomeTabNavigator = () => {
       }}>
       <Tab.Screen
         name={'Explore'}
-        // component={ExploreNavigator}
-        component={SearchResultsMap}
+        component={ExploreNavigator}
+        //component={SearchResultsMap}
+        component={PostScreen}
         options={{
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />
